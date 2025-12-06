@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "556499773272",
+    "project_id": "appalumnos-dd56c",
+    "storage_bucket": "appalumnos-dd56c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556499773272:android:0486fc073dfb0d9a27672d",
+        "android_client_info": {
+          "package_name": "pe.app.appalumnos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqBg_Zvr3Yv2tI78MGnW5zyD1nRJ7ZrFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
