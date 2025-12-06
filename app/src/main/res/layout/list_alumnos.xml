@@ -22,6 +22,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view_alumno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/image_border"
+        app:iconifiedByDefault="false"
+        app:queryHint="Buscar alumno..."
+        app:layout_constraintTop_toBottomOf="@+id/text_view_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_alumnos"
         android:layout_width="match_parent"
@@ -33,7 +45,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_title"
+        app:layout_constraintTop_toBottomOf="@+id/search_view_alumno"
         tools:listitem="@layout/card_list_alumno" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -12,13 +12,9 @@ class AlumnosAdapter(
     var data: ArrayList<Alumno>,
     private val onItemClicked: (Alumno) -> Unit
 ) : RecyclerView.Adapter<AlumnosAdapter.AlumnoViewHolder>() {
-
-    // Clase interna ViewHolder
     class AlumnoViewHolder(item: View) : RecyclerView.ViewHolder(item) {
-        val textNombre: TextView = item.findViewById(R.id.text_nombre) // Reutilizamos ID del layout anterior o crea uno nuevo text_nombre
-        val textApellido: TextView = item.findViewById(R.id.text_apellido) // Reutilizamos ID text_apellido
-
-        // Puedes ocultar los elementos que no uses del layout original (chip, imagen) en el XML
+        val textNombre: TextView = item.findViewById(R.id.text_nombre)
+        val textApellido: TextView = item.findViewById(R.id.text_apellido)
     }
 
     fun updateData(newData: ArrayList<Alumno>) {
@@ -28,7 +24,7 @@ class AlumnosAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AlumnoViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.card_list_alumno, parent, false) // Usa tu layout de tarjeta
+            .inflate(R.layout.card_list_alumno, parent, false)
         return AlumnoViewHolder(view)
     }
 
